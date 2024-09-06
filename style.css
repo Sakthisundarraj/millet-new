@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mina:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/raw-organic-healthy-millet-top-view.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    padding: 30px 0px;
+    /* background-color: #DA2C1C; */
+}
+.logo{
+    padding: 10px 100px;
+    display: flex;
+}
+.logo p{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: "Mina", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+}
+.logo img{
+    width:100px;
+}
+.containerTime {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+    width: 60%;
+    padding: 50px 0px;
+    position: relative;
+}
+.content h1{
+    position: absolute;
+    top:-40px;
+    left: 50%;
+    transform:translateX(-50%);
+    padding: 20px 30px;
+    border-radius: 50px;
+    /* background-color: #A7D3B2; */
+    background-color: #fedd6f;
+    color: #DA2C1C;
+    font-family: "Dancing Script", cursive;
+    padding-right: 20px;
+    
+}
+.content p{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    letter-spacing: 10px;
+    font-size: 40px;
+    /* padding-top: 20px; */
+    color: #fff;
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.time{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+  
+/* responsive */
+
+@media(max-width:1024px){
+    .content h1 {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(max-width:768px){
+    .logo {
+        padding: 10px 5px;
+        display: flex;
+    }
+    .logo img{
+        width:100px;
+    }
+    .containerTime {
+        width: 80%;
+    }
+    .content h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .time{
+        padding-top: 120px;
+        padding-bottom: 140px;
+        display: flex;
+        justify-content: center;
+    }
+    .containerTime {
+        padding: 30px 0px;
+    }
+
+}
+
+@media(max-width:576px){
+    .logo {
+        padding: 10px 5px;
+        display: flex;
+    }
+    .logo img{
+        width:100px;
+    }
+    .containerTime {
+        width: 80%;
+        padding: 50px 10px;
+    }
+    .content h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .time{
+        padding-top: 100px;
+        padding-bottom: 140px;
+        display: flex;
+        justify-content: center;
+    }
+}
